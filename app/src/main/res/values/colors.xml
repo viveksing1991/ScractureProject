@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--<color name="colorPrimary">#90ddc9</color>
+    <color name="colorPrimaryDark">#3d3f3f</color>
+    <color name="colorAccent">#84cdb9</color>
+-->
+    <color name="colorPrimary">#1cd7af</color>
+    <color name="colorPrimaryDark">#153e4e</color>
+    <color name="colorAccent">#a9d6c3</color>
+
+    <color name="othersOneToolbar">#153e4e</color>
+    <color name="othersTwoButton">#1cd7af</color>
+    <color name="othersthreeTabback">#d9e3e5</color>
+    <color name="othersFour">#97a1a6</color>
+    <color name="othersfive">#a9d6c3</color>
+
+</resources>

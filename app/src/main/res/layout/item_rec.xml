@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+    <data>
+        <import type="com.scracture.model.toolbar.info.Info" />
+        <variable
+            name="info"
+            type="Info"/>
+       <!-- <variable
+            name="image"
+            type="com.scracture.model.toolbar.info.ProfileViewModel"/>-->
+    </data>
+    <LinearLayout
+        android:orientation="vertical"
+        tools:ignore="MissingPrefix"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <android.support.v7.widget.CardView
+            android:id="@+id/card_view"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_margin="5dp"
+            app:cardCornerRadius="2dp"
+            app:contentPadding="10dp">
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+                <ImageView
+                    app:imageUrl="@{info.imageUrl}"
+                    android:id="@+id/imv"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp" />
+                <TextView
+                    android:textColor="@android:color/black"
+                    fontPath="fonts/OpenSans-Bold.ttf"
+                    android:textSize="12sp"
+                    android:text="@{info.heading}"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    />
+
+                <TextView
+                    fontPath="fonts/OpenSans-BoldItalic.ttf"
+                    android:textSize="12sp"
+                    android:text="@{info.data}"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/textView"
+                    android:layout_marginTop="10dp"/>
+            </LinearLayout>
+        </android.support.v7.widget.CardView>
+
+    </LinearLayout>
+</layout>
