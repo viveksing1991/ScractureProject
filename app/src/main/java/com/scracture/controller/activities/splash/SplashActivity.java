@@ -2,6 +2,7 @@ package com.scracture.controller.activities.splash;
 
 import android.os.Bundle;
 
+import com.scracture.controller.activities.landing.LandingActivity;
 import com.scracture.controller.activities.main.MainActivity;
 import com.scracture.R;
 import com.scracture.common.Base;
@@ -46,7 +47,8 @@ public class SplashActivity extends Base {
     class SplashRunnable implements Runnable {
         @Override
         public void run() {
-            startNewActivity(MainActivity.class);
+            startNewActivity(LandingActivity.class);
+          //  startNewActivity(MainActivity.class);
             finish();
         }
     }

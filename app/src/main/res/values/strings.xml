@@ -3,4 +3,17 @@
 
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    <!--login text-->
+    <string name="txt_login">Login</string>
+    <string name="txt_signup">SignUp</string>
+    <string name="txt_forgot_password">Forgot password?</string>
+    <string name="txt_your_email_address">Your Email Address</string>
+    <string name="txt_your_password">Your Password</string>
+    <string name="txt__hint_your_email_address">Enter Your Email Address</string>
+    <string name="txt_hint_your_password">Enter Your Password</string>
+    <string name="txt_submit">Submit</string>
+    <string name="txt_enter_your_name">Your Name</string>
+    <string name="txt_hint_enter_your_name">Enter Your Name</string>
+
 </resources>
