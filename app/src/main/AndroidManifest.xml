@@ -24,7 +24,7 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".controller.activities.login.landing.LandingActivity"
+            android:name=".controller.activities.landing.LandingActivity"
             android:screenOrientation="portrait" />
         <activity android:name=".controller.activities.login.LoginActivity" />
         <activity android:name=".controller.activities.signup.SignUpActiivity"></activity>

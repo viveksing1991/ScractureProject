@@ -12,6 +12,7 @@ public class LoginActivity extends Base {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_login);
+        tvToolbar.setText(getResources().getString(R.string.txt_login));
     }
 
     @Override
@@ -27,5 +28,10 @@ public class LoginActivity extends Base {
     @Override
     protected void setViewReferences() {
 
+    }
+
+    @Override
+    protected boolean useToolbar() {
+        return true;
     }
 }

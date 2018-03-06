@@ -35,7 +35,6 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content" />
             <EditText
-                app:validateEmpty="@{true}"
                 android:inputType="text"
                 android:text="@{signUpInfo.userName}"
                 style="@style/TextViewCommon15sp"
@@ -51,8 +50,6 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content" />
             <EditText
-                app:validateType='@{"email"}'
-                app:validateEmpty="@{true}"
                 android:inputType="textEmailAddress"
                 android:text="@{signUpInfo.emailId}"
                 style="@style/TextViewCommon15sp"
@@ -68,7 +65,6 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content" />
             <EditText
-                app:validateEmpty="@{true}"
                 android:inputType="textPassword"
                 android:text="@{signUpInfo.password}"
                 style="@style/TextViewCommon15sp"
