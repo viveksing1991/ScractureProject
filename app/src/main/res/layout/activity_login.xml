@@ -9,6 +9,9 @@
             name="loginInfo"
             type="Login"/>
     </data>
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
     <RelativeLayout
         android:orientation="vertical"
         tools:ignore="MissingPrefix"
@@ -34,6 +37,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content" />
             <EditText
+                android:inputType="textEmailAddress"
                 style="@style/TextViewCommon15sp"
                 android:hint="@string/txt__hint_your_email_address"
                 android:padding="@dimen/margin_10"
@@ -47,6 +51,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content" />
             <EditText
+                android:inputType="textPassword"
                 style="@style/TextViewCommon15sp"
                 android:hint="@string/txt_hint_your_password"
                 android:padding="@dimen/margin_10"
@@ -54,6 +59,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content" />
             <Button
+                android:id="@+id/btnLogin"
                 style="@style/TextViewCommon15sp"
                 android:textAllCaps="false"
                 android:textColor="@android:color/white"
@@ -66,4 +72,5 @@
                 android:layout_height="wrap_content" />
         </LinearLayout>
     </RelativeLayout>
+    </ScrollView>
 </layout>

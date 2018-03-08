@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_category"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:ignore="MissingPrefix"
+    tools:context="com.scracture.controller.activities.categories.CategoryActivity">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <android.support.v4.widget.SwipeRefreshLayout
+            android:id="@+id/swipeRefresh"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <GridView xmlns:android="http://schemas.android.com/apk/res/android"
+                android:id="@+id/gridview"
+                fontPath="fonts/SanFranciscoText-Regular_0.ttf"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:horizontalSpacing="@dimen/margin_10"
+                android:numColumns="3"
+                android:paddingLeft="@dimen/margin_10"
+                android:paddingRight="@dimen/margin_10"
+                android:scrollbarThumbVertical="@android:color/transparent"
+                android:verticalSpacing="@dimen/margin_10" />
+          <!--  <RelativeLayout
+                android:visibility="gone"
+                android:orientation="vertical"
+                android:clickable="true"
+                android:focusable="true"
+                android:id="@+id/rlNoInter"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+                <TextView
+                    android:gravity="top|center"
+                    android:layout_below="@+id/tvInternet"
+                    android:textColor="@android:color/black"
+                    android:text="@string/txt_internet_off"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" />
+                <ImageView
+                    android:layout_centerInParent="true"
+                    android:src="@drawable/ic_signal_wifi_off_black_24dp"
+                    android:visibility="visible"
+                    android:id="@+id/tvInternet"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp" />
+            </RelativeLayout>
+    -->    </android.support.v4.widget.SwipeRefreshLayout>
+    </RelativeLayout>
+
+</RelativeLayout>

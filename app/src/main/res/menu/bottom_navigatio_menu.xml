@@ -23,7 +23,7 @@
         android:id="@+id/action_others"
         android:enabled="true"
         android:icon="@drawable/ic_school_black_24dp"
-        android:title="Others"
+        android:title="Contact Us"
         app:showAsAction="ifRoom" />
 
 </menu>

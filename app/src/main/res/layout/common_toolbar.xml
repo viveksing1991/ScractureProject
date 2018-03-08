@@ -8,6 +8,7 @@
         tools:context=".controller.activities.main.MainActivity">
 
         <android.support.v7.widget.Toolbar
+            android:elevation="@dimen/margin_10"
             android:background="@color/colorPrimaryDark"
             android:id="@+id/toolbar"
             android:minHeight="?attr/actionBarSize"

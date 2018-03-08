@@ -13,9 +13,11 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ImageView;
+import android.widget.Toast;
 
 import com.scracture.R;
 import com.scracture.common.BaseFragment;
+import com.scracture.controller.activities.details.DetailsActivity;
 import com.scracture.databinding.FragmentHomeBinding;
 import com.scracture.databinding.ItemRecBinding;
 import com.scracture.model.toolbar.info.Info;
@@ -121,6 +123,18 @@ public class HomeFragment extends BaseFragment {
         public void onBindViewHolder(ViewHolder holder, int position) {
             Info user=mUserList.get(position);
             holder.bind(user);
+            listenerOnItem(holder);
+        }
+
+        private void listenerOnItem(ViewHolder holder) {
+            holder.mBinding.cardView.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View v) {
+                    startNewActivity(DetailsActivity.class);
+
+                }
+            });
+
         }
 
         @Override

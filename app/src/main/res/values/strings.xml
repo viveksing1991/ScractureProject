@@ -15,5 +15,6 @@
     <string name="txt_submit">Submit</string>
     <string name="txt_enter_your_name">Your Name</string>
     <string name="txt_hint_enter_your_name">Enter Your Name</string>
-
+    <!--Category-->
+    <string name="txt_category">Categories</string>
 </resources>
